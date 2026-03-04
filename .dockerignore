@@ -1,0 +1,49 @@
+# Docker ignore file to exclude unnecessary files from Docker build context
+
+# Maven
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+# IDE
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.settings/
+.classpath
+.project
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# Documentation (optional - remove if you want docs in image)
+*.md
+!README.md
+
+# Logs
+logs/
+*.log
+
+# Test files
+**/src/test/
+
+# Environment files
+.env
+.env.local
+
+# Qodo
+.qodo/
+
+# Other
+*.swp
+*.swo
+*~
